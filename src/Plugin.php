@@ -1,0 +1,29 @@
+<?php
+/**
+ * The core plugin class.
+ *
+ * @package    SB2Media\MovieDemo
+ * @since      1.0.0
+ * @author     sbarry
+ * @link       http://example.com
+ * @license    GNU General Public License 2.0+
+ */
+
+namespace SB2Media\MovieDemo;
+
+use SB2Media\Headless\Application;
+
+class Plugin extends Application
+{
+    /**
+     * Boot the plugin functionality
+     *
+     * @since 1.0.0
+     * @return void
+     */
+    public function boot()
+    {
+        parent::boot();
+        // ddd(app());
+    }
+}
