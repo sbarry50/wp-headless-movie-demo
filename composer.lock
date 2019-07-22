@@ -436,16 +436,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.21.2",
+            "version": "2.21.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "a8bfb6631e3bc982427406d13ad817fc45d47b61"
+                "reference": "58bdbbfab17ccd2ec7347b99e997f18232def4dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/a8bfb6631e3bc982427406d13ad817fc45d47b61",
-                "reference": "a8bfb6631e3bc982427406d13ad817fc45d47b61",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/58bdbbfab17ccd2ec7347b99e997f18232def4dc",
+                "reference": "58bdbbfab17ccd2ec7347b99e997f18232def4dc",
                 "shasum": ""
             },
             "require": {
@@ -499,7 +499,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-07-17T07:49:05+00:00"
+            "time": "2019-07-18T18:47:28+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -700,16 +700,16 @@
         },
         {
             "name": "sb2-media/wp-headless-lib",
-            "version": "v0.3.4",
+            "version": "v0.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sbarry50/wp-headless-lib.git",
-                "reference": "cbb29f3eb4d71b4da9a6785157ec0d18955961e7"
+                "reference": "9a18756f9386eeb0a61dfa096fb8a78909f0c52e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sbarry50/wp-headless-lib/zipball/cbb29f3eb4d71b4da9a6785157ec0d18955961e7",
-                "reference": "cbb29f3eb4d71b4da9a6785157ec0d18955961e7",
+                "url": "https://api.github.com/repos/sbarry50/wp-headless-lib/zipball/9a18756f9386eeb0a61dfa096fb8a78909f0c52e",
+                "reference": "9a18756f9386eeb0a61dfa096fb8a78909f0c52e",
                 "shasum": ""
             },
             "require": {
@@ -753,7 +753,7 @@
                 "wordpress",
                 "wpgraphql"
             ],
-            "time": "2019-07-18T16:41:42+00:00"
+            "time": "2019-07-22T16:50:25+00:00"
         },
         {
             "name": "symfony/finder",

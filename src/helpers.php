@@ -26,7 +26,7 @@ use SB2Media\Headless\File\FileSystem;
 function launch(string $plugin_root_file)
 {
     $app = app($plugin_root_file);
-    $app->boot();
+    $app->boot()->run();
 }
 
 /**

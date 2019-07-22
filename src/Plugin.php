@@ -16,14 +16,13 @@ use SB2Media\Headless\Application;
 class Plugin extends Application
 {
     /**
-     * Boot the plugin functionality
+     * Run the plugin functionality
      *
      * @since 1.0.0
      * @return void
      */
-    public function boot()
+    public function run()
     {
-        parent::boot();
-        // ddd(app());
+        // Run plugin functionality
     }
 }

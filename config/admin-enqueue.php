@@ -62,7 +62,7 @@ return [
     'scripts' => [
         [
             'id'           => 'jquery-mask',
-            'src'          => SB2Media\MovieDemo\url('dist/js/jquery.mask.js'),
+            'src'          => SB2Media\MovieDemo\url('resources/js/jquery.mask.js'),
             'dependencies' => [],
             'version'      => false,
             'in_footer'    => true,
