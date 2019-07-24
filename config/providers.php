@@ -46,7 +46,16 @@ return [
         ],
         'compatibility' => [
             'class' => SB2Media\Headless\Setup\Compatibility::class,
-            'app' => true
+            'app' => true,
+            'params' => [
+                'plugin_dependencies' => [
+                    [
+                        'name' => 'WP GraphQL',
+                        'path' => 'wp-graphql/wp-graphql.php',
+                        'src' => 'https://docs.wpgraphql.com/getting-started/install-and-activate',
+                    ],
+                ]
+            ]
         ],
         'I18n' => [
             'class' => SB2Media\Headless\Setup\I18n::class,
