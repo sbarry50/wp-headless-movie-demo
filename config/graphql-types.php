@@ -45,19 +45,25 @@
 
 return [
     [
-        'id'   => 'MovieGenre',
+        'id'   => 'MovieRating',
         'type' => 'enum',
         'args' => [
-            'description' => 'The genre of movie',
+            'description' => 'How would you rate this movie?',
             'values'      => [
-                'COMEDY' => [
-                    'value' => 'comedy'
+                'GREAT' => [
+                    'value' => '5'
                 ],
-                'DRAMA' => [
-                    'value' => 'drama'
+                'GOOD' => [
+                    'value' => '4'
                 ],
-                'HORROR' => [
-                    'value' => 'horror'
+                'OK' => [
+                    'value' => '3'
+                ],
+                'BAD' => [
+                    'value' => '2'
+                ],
+                'TERRIBLE' => [
+                    'value' => '1'
                 ],
             ],
         ],
@@ -71,22 +77,22 @@ return [
                 'title' => [
                     'type' => 'String',
                     'description' => 'The movie title',
-                    'resolve' => function ($params) {
-                        return !empty($params['title']) ? $params['title'] : null;
+                    'resolve' => function ($movie_details) {
+                        return isset($movie_details['title']) ? $movie_details['title'] : null;
                     }
                 ],
-                'genre' => [
-                    'type' => 'MovieGenres',
-                    'description' => 'The genre of the movie',
-                    'resolve' => function ($params) {
-                        return !empty($params['genre']) ? $params['genre'] : null;
+                'rating' => [
+                    'type' => 'MovieRating',
+                    'description' => 'How would you rate this movie?',
+                    'resolve' => function ($movie_details) {
+                        return isset($movie_details['rating']) ? $movie_details['rating'] : null;
                     }
                 ],
                 'year' => [
                     'type' => 'String',
                     'description' => 'The year the movie was released.',
-                    'resolve' => function ($params) {
-                        return isset($params['year']) ? $params['year'] : null;
+                    'resolve' => function ($movie_details) {
+                        return isset($movie_details['year']) ? $movie_details['year'] : null;
                     }
                 ],
                 'actors' => [
@@ -94,15 +100,15 @@ return [
                         'list_of' => 'String'
                     ],
                     'description' => 'The actors who starred in the movie.',
-                    'resolve' => function ($params) {
-                        return isset($params['actors']) ? $params['actors'] : null;
+                    'resolve' => function ($movie_details) {
+                        return isset($movie_details['actors']) ? $movie_details['actors'] : null;
                     }
                 ],
                 'poster' => [
                     'type' => 'MediaDetails',
                     'description' => 'Movie poster details.',
-                    'resolve' => function ($params) {
-                        return isset($params['poster']) ? $params['poster'] : null;
+                    'resolve' => function ($movie_details) {
+                        return isset($movie_details['poster']) ? $movie_details['poster'] : null;
                     }
                 ],
             ]

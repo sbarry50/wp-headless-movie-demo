@@ -34,6 +34,8 @@ return [
         'screen'   => 'movie',
         'context'  => 'normal',
         'priority' => 'high',
-        'args'     => [],
+        'args'     => [
+            'vue_id' => 'app'
+        ],
     ],
 ];

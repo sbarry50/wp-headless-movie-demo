@@ -61,6 +61,16 @@ return [
     ********************************************************/
     'scripts' => [
         [
+            'id'           => 'main',
+            'src'          => SB2Media\MovieDemo\url('dist/js/main.js'),
+            'dependencies' => [],
+            'version'      => '1.0.0',
+            'in_footer'    => true,
+            'only_load' => [
+                'post_type' => 'movie'
+            ]
+        ],
+        [
             'id'           => 'jquery-mask',
             'src'          => SB2Media\MovieDemo\url('resources/js/jquery.mask.js'),
             'dependencies' => [],

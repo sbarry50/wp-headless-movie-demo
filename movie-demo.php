@@ -1,7 +1,7 @@
 <?php
 
 /*
-* Plugin Name: WP-Headless Movie Demo
+* Plugin Name: WP Headless Movie Demo
 * Description: Demo plugin for the WP-Headless library.
 * Version: 1.0.0
 * Author: sbarry50

@@ -1,0 +1,1 @@
+<rate :length='5' name='<?=$args["id"]?>' :value='<?=!empty($args["value"]) ? $args["value"] : 0?>' :ratedesc='<?=json_encode($args["args"]["ratedesc"])?>' />

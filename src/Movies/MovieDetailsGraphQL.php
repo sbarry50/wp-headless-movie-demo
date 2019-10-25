@@ -12,8 +12,8 @@
 namespace SB2Media\MovieDemo\Movies;
 
 use SB2Media\Headless\Contracts\GraphQLResolverContract;
-use function SB2Media\Headless\app;
-use function SB2Media\Headless\config;
+use function SB2Media\MovieDemo\app;
+use function SB2Media\MovieDemo\config;
 
 class MovieDetailsGraphQL implements GraphQLResolverContract
 {
@@ -23,14 +23,15 @@ class MovieDetailsGraphQL implements GraphQLResolverContract
      * @since 1.0.0
      * @param array $config
      * @param string|array $value
-     * @return void
+     * @param integer $post_id
+     * @return string
      */
     public function resolve(array $config, $value, int $post_id = null)
     {
         $movie_details = [];
 
         $movie_details['title'] = get_post_meta($post_id, 'movie_title', true);
-        $movie_details['genre'] = get_post_meta($post_id, 'movie_genre', true);
+        $movie_details['rating'] = get_post_meta($post_id, 'movie_rating', true);
         $movie_details['year'] = get_post_meta($post_id, 'movie_year', true);
         $movie_details['actors'] = get_post_meta($post_id, 'movie_actors', true);
 

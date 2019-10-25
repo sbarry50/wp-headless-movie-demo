@@ -90,12 +90,14 @@ return [
         ],
         'admin-enqueue' => [
             'class'  => SB2Media\Headless\Enqueue\EnqueueManager::class,
+            'app' => true,
             'config' => [
                 'admin-enqueue'
             ]
         ],
         'enqueue' => [
             'class'  => SB2Media\Headless\Enqueue\EnqueueManager::class,
+            'app' => true,
             'config' => [
                 'enqueue'
             ]
@@ -206,6 +208,9 @@ return [
     */
 
     'extension' => [
+        'movie-ratings-graphql' => [
+            'class' => SB2Media\MovieDemo\Movies\MovieRatingsGraphQL::class,
+        ],
         'movie-details-graphql' => [
             'class' => SB2Media\MovieDemo\Movies\MovieDetailsGraphQL::class,
         ],

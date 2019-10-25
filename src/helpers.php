@@ -12,9 +12,6 @@
 namespace SB2Media\MovieDemo;
 
 use Exception;
-use Illuminate\Support\Str;
-use SB2Media\Headless\File\Loader;
-use SB2Media\Headless\File\FileSystem;
 
 /**
  * Launch the application
@@ -164,8 +161,7 @@ function url($path = '')
  * Get the path of the plugin, subdirectory or file.
  *
  * @since 0.1.0
- * @param string $subdir    Optionally, the name of a subdirectory
- * @param string $file      Optionally, the name of a file
+ * @param string $path    Optionally, the file path relative to the views directory
  * @return string
  */
 function view($path = '')

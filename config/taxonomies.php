@@ -47,33 +47,33 @@ $text_domain = SB2Media\MovieDemo\app()->text_domain;
 ********************************************************/
 
 return [
-    // [
-    //     'id'          => 'example',
-    //     'label'       => __('Example', $text_domain),
-    //     'description' => __('Example Description', $text_domain),
-    //     'labels'      => [
-    //         'name'               => _x('Examples', 'post type general name', $text_domain),
-    //         'singular_name'      => _x('Example', 'post type singular name', $text_domain),
-    //         'menu_name'          => _x('Examples', 'admin menu', $text_domain),
-    //         'name_admin_bar'     => _x('Example', 'add new on admin bar', $text_domain),
-    //         'add_new'            => _x('Add New', 'example', $text_domain),
-    //         'add_new_item'       => __('Add New Example', $text_domain),
-    //         'new_item'           => __('New Example', $text_domain),
-    //         'edit_item'          => __('Edit Example', $text_domain),
-    //         'view_item'          => __('View Example', $text_domain),
-    //         'all_items'          => __('All Examples', $text_domain),
-    //         'search_items'       => __('Search Examples', $text_domain),
-    //         'parent_item_colon'  => __('Parent Examples:', $text_domain),
-    //         'not_found'          => __('No examples found.', $text_domain),
-    //         'not_found_in_trash' => __('No examples found in Trash.', $text_domain)
-    //     ],
-    //     'public'              => true,
-    //     'supports'            => ['example'],
-    //     'hierarchical'        => true,
-    //     'show_in_menu'        => true,
-    //     'show_in_rest'        => true,
-    //     'show_in_graphql'     => true, // If using WPGraphQL Plugin
-    //     'graphql_single_name' => 'example', // If using WPGraphQL Plugin
-    //     'graphql_plural_name' => 'examples', // If using WPGraphQL Plugin
-    // ],
+    [
+        'id'          => 'movie_genre',
+        'label'       => __('Movie Genre', $text_domain),
+        'description' => __('Movie Genre Description', $text_domain),
+        'labels'      => [
+            'name'               => _x('Movie Genres', 'post type general name', $text_domain),
+            'singular_name'      => _x('Movie Genre', 'post type singular name', $text_domain),
+            'menu_name'          => _x('Movie Genres', 'admin menu', $text_domain),
+            'name_admin_bar'     => _x('Movie Genre', 'add new on admin bar', $text_domain),
+            'add_new'            => _x('Add New', 'movie genre', $text_domain),
+            'add_new_item'       => __('Add New Movie Genre', $text_domain),
+            'new_item'           => __('New Movie Genre', $text_domain),
+            'edit_item'          => __('Edit Movie Genre', $text_domain),
+            'view_item'          => __('View Movie Genre', $text_domain),
+            'all_items'          => __('All Movie Genres', $text_domain),
+            'search_items'       => __('Search Movie Genres', $text_domain),
+            'parent_item_colon'  => __('Parent Movie Genres:', $text_domain),
+            'not_found'          => __('No movie genres found.', $text_domain),
+            'not_found_in_trash' => __('No movie genres found in Trash.', $text_domain)
+        ],
+        'public'              => true,
+        'supports'            => ['movie'],
+        'hierarchical'        => true,
+        'show_in_menu'        => true,
+        'show_in_rest'        => true,
+        'show_in_graphql'     => true, // If using WPGraphQL Plugin
+        'graphql_single_name' => 'MovieGenre', // If using WPGraphQL Plugin
+        'graphql_plural_name' => 'MovieGenres', // If using WPGraphQL Plugin
+    ],
 ];

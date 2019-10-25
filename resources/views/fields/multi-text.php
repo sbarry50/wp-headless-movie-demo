@@ -8,7 +8,6 @@
         name="<?=$args['id'] . '[]';?>"
         type="text" 
         value="<?=is_array($args['value']) ? $args['value'][$i] : '';?>" 
-        placeholder="<?=(isset($args['args']['placeholder']) && $args['args']['placeholder'])  ? $args['args']['placeholder'] : '';?>" 
         <?= (isset($args['args']['required']) && $args['args']['required'])  ? 'required' : ''; ?>
     />
 <?php endfor; ?>

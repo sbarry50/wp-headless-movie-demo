@@ -40,26 +40,18 @@ return [
         'args'        => [],
     ],
     [
-        'id'          => 'movie_genre',
-        'title'       => 'Movie Genre',
-        'description' => 'The genre of the movie.',
-        'callback'    => 'select.php',
+        'id'          => 'movie_rating',
+        'title'       => 'Movie Rating',
+        'description' => 'How would you rate this movie?',
+        'callback'    => 'rating.php',
         'meta_box'    => 'movie_details',
         'args'        => [
-            'options' => [
-                [
-                    'value' => 'comedy',
-                    'label' => 'Comedy',
-                ],
-                [
-                    'value' => 'drama',
-                    'label' => 'Drama',
-                ],
-                [
-                    'value' => 'horror',
-                    'label' => 'Horror',
-                ],
-            ],
+            'ratedesc' => ['Terrible', 'Bad', 'OK', 'Good', 'Great'],
+        ],
+        'graphql' => [
+            'type' => 'MovieRating',
+            'description' => 'Movie rating',
+            'resolver' => 'movie-ratings-graphql'
         ]
     ],
     [
@@ -69,7 +61,7 @@ return [
         'callback'    => 'number.php',
         'meta_box'    => 'movie_details',
         'args'        => [
-            'placeholder' => '0000'
+            'placeholder' => 'yyyy'
         ]
     ],
     [
@@ -85,7 +77,6 @@ return [
             'type' => [
                 'list_of' => 'String'
             ],
-            'resolver' => 'movie-details-graphql'
         ]
     ],
     [
@@ -103,6 +94,19 @@ return [
         'graphql' => [
             'type' => 'MediaDetails',
             'resolver' => 'media-details-graphql',
+        ]
+    ],
+    [
+        'id'          => 'movie_details',
+        'title'       => 'Movie Details',
+        'description' => 'Not used as an input. Demo purposes for GraphQL only.',
+        'callback'    => '',
+        'meta_box'    => 'movie_details',
+        'args'        => [],
+        'graphql' => [
+            'type' => 'MovieDetails',
+            'description' => 'Movie Details GraphQL object demo',
+            'resolver' => 'movie-details-graphql'
         ]
     ],
 ];
